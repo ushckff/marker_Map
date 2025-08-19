@@ -17,7 +17,7 @@ import LikeButton from "@/features/social/LikeButton";
 import FavoriteButton from "@/features/social/FavoriteButton";
 import Comments from "@/features/comments/Comments";
 
-import trashIcon from "@/assets/trash.png";
+import trashIcon from "/assets/trash.png";
 
 import PointInfoModal, {
   PointInfo,
