@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      var p = location.pathname + location.search + location.hash;
+
+      var base = "/marker_Map";
+
+      if (!p.startsWith(base)) base = "";
+
+      sessionStorage.redirect = p;
+      location.replace(base + "/");
+    </script>
+  </head>
+  <body></body>
+</html>
