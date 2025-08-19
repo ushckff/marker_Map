@@ -1,0 +1,145 @@
+.c-wrap {
+  margin-top: 16px;
+}
+
+/* список */
+.c-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.c-item {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start; /* не центрируем по вертикали */
+}
+
+.c-ava {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* карточка комментария */
+.c-body {
+  flex: 1;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px 10px 10px;
+}
+
+.c-head {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0 0 4px;
+}
+
+.c-name {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.c-date {
+  margin-bottom: 15px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.c-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.c-text {
+  white-space: pre-wrap;
+  margin-bottom: 0;
+}
+
+.c-note {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.c-form textarea {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.c-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+.c-body .btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* delete — красноватая */
+.c-body .icon-btn.trash {
+  padding: 4px;
+  border: 1px solid #ffcdd2;
+  background: #ffebee;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.c-body .icon-btn.trash:hover {
+  border-color: #ef9a9a;
+  background: #ffe3e6;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.c-body .like-btn {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  height: 44px;
+  width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-body .like-btn .icon-img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.c-body .like-btn .like-count {
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--c-primary-weak, #e8f3ff);
+  border: 1px solid #cfe4ff;
+  color: var(--c-text, #0f2b46);
+  font-size: 11px;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+}

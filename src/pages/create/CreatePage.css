@@ -1,0 +1,83 @@
+.create-wrap {
+  max-width: 680px;
+  margin: 24px auto;
+}
+.create-title {
+  margin: 0 0 16px;
+}
+.create-form {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+}
+.f-label {
+  display: block;
+  font-size: 12px;
+  opacity: 0.7;
+  margin: 8px 0 4px;
+}
+.f-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 800px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+.hint {
+  font-size: 12px;
+  opacity: 0.65;
+  margin: 6px 0 0;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #1e88e5;
+  color: #fff;
+  border-color: #1e88e5;
+}
+.f-err {
+  color: #c62828;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Видимость */
+.vis-fieldset {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 12px 0;
+}
+.vis-option {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 6px 0;
+}
+.vis-title {
+  font-weight: 600;
+}
+.vis-desc {
+  font-size: 12px;
+  opacity: 0.75;
+}

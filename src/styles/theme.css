@@ -1,0 +1,14 @@
+:root {
+  --c-bg: #f7fbff;
+  --c-card: #ffffff;
+  --c-border: #dfeaf7;
+  --c-text: #0f2b46;
+  --c-muted: #6c7c8d;
+
+  --c-primary: #4da3ff;
+  --c-primary-600: #2f8cf0;
+  --c-primary-weak: #eaf4ff;
+
+  --radius: 12px;
+  --shadow: 0 4px 16px rgba(20, 60, 120, 0.08);
+}

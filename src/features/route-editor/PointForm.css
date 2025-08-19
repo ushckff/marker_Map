@@ -1,0 +1,95 @@
+.pf-form {
+  background: var(--c-card);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+
+.pf-label {
+  display: block;
+  font-size: 12px;
+  opacity: 0.7;
+  margin: 8px 0 4px;
+}
+
+.pf-label.is-error {
+  color: #c62828;
+  opacity: 1;
+  font-weight: 700;
+}
+
+.pf-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #dde7f5;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.pf-input.is-invalid {
+  border-color: #e57373;
+  box-shadow: 0 0 0 2px rgba(229, 115, 115, 0.12) inset;
+}
+
+.pf-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 12px;
+  align-items: end;
+  margin-top: 10px;
+}
+
+.pf-col.pf-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pf-tags.pf-tags--chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin-top: 6px;
+}
+
+.tag.chip {
+  border: 1px solid var(--c-border);
+  background: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+.tag.chip:hover {
+  background: var(--c-primary-weak);
+  border-color: #cfe4ff;
+}
+.tag.chip.is-active {
+  background: var(--c-primary-weak);
+  border-color: var(--c-primary);
+  box-shadow: 0 0 0 2px rgba(47, 140, 240, 0.12) inset;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--c-border);
+  background: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.15s ease;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn:hover {
+  color: var(--c-primary);
+  border-color: #cfe4ff;
+  background: var(--c-primary-weak);
+}
+.btn-primary {
+  border-color: var(--c-primary);
+  background: var(--c-primary-weak);
+}

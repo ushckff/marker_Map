@@ -1,0 +1,140 @@
+.pl-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--c-card);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+
+.pl-empty {
+  border: 1px dashed var(--c-border);
+  background: var(--c-primary-weak);
+  color: var(--c-text);
+  border-radius: var(--radius);
+  padding: 14px;
+  text-align: center;
+}
+.pl-empty-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.pl-empty-desc {
+  font-size: 12px;
+  color: var(--c-muted);
+}
+
+.pl-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: auto;
+  min-height: 0;
+  flex: 1;
+}
+
+.pl-item {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  background: #fff;
+}
+.pl-order {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--c-primary-weak);
+  border: 1px solid var(--c-border);
+  color: var(--c-text);
+  font-weight: 700;
+}
+.pl-body {
+  min-width: 0;
+}
+.pl-title {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pl-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--c-muted);
+}
+
+.pl-tag {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.pl-sep {
+  opacity: 0.5;
+}
+
+.pl-actions {
+  display: flex;
+  gap: 6px;
+}
+.btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--c-border);
+  background: #fff;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+.btn:hover {
+  color: var(--c-primary);
+  border-color: #cfe4ff;
+  background: var(--c-primary-weak);
+}
+
+.icon-btn.edit {
+  padding: 4px;
+  border: 1px solid #bbdefb;
+  background: #e3f2fd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+.icon-btn.edit:hover {
+  border-color: #90caf9;
+  background: #dbeeff;
+}
+
+.icon-btn.trash {
+  padding: 4px;
+  border: 1px solid #ffcdd2;
+  background: #ffebee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+.icon-btn.trash:hover {
+  border-color: #ef9a9a;
+  background: #ffe3e6;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}

@@ -1,0 +1,7 @@
+.signout {
+  border: 1px solid var(--c-border);
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}

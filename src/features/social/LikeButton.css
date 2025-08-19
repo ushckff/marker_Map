@@ -1,0 +1,23 @@
+.icon-btn.like {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.icon-btn.like:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.icon-count {
+  font-size: 12px;
+  opacity: 0.8;
+}

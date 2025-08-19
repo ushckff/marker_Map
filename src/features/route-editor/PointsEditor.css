@@ -1,0 +1,72 @@
+.pe-wrap {
+  margin-top: 10px;
+}
+.pe-title {
+  margin: 0 0 8px;
+  color: var(--c-text);
+}
+.pe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 12px;
+  align-items: stretch;
+  min-height: 0;
+}
+.pe-grid > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.pe-grid > div > .pf-form,
+.pe-grid > div > .pl-panel {
+  flex: 1;
+  height: 100%;
+  min-height: 0;
+}
+@media (max-width: 900px) {
+  .pe-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pe-card {
+  background: var(--c-card);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+.pe-sub {
+  margin: 0 0 8px;
+}
+.pe-hint {
+  font-size: 12px;
+  color: var(--c-muted);
+  margin-bottom: 8px;
+}
+.pe-hint {
+  margin: 8px 0 12px;
+  font-size: 13px;
+  color: #43607a;
+  opacity: 0.9;
+}
+.pe-picked {
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e8f3ff;
+  border: 1px solid #d6e6ff;
+}
+.pe-clear {
+  margin-left: 6px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #2f8cf0;
+  font-weight: 700;
+}
+.pe-clear:focus {
+  outline: none;
+}

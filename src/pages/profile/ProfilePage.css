@@ -1,0 +1,242 @@
+.profile-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.profile-card {
+  background: #fff;
+  border: 1px solid var(--c-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.profile-head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 14px;
+  align-items: center;
+}
+
+.avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--c-border);
+  background: var(--c-primary-weak);
+  display: grid;
+  place-items: center;
+}
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.head-info .title {
+  margin: 0;
+}
+.muted {
+  color: var(--c-muted);
+}
+.err {
+  color: #c62828;
+}
+
+.head-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-form {
+  display: grid;
+  gap: 12px;
+}
+.form-row {
+  display: grid;
+  gap: 6px;
+}
+.label {
+  font-weight: 600;
+}
+.input {
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid var(--c-border);
+  border-radius: 10px;
+}
+.form-error {
+  background: #ffecec;
+  border: 1px solid #ffc4c4;
+  color: #7a0b0b;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid var(--c-border);
+  background: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+}
+.btn-primary {
+  border-color: var(--c-primary);
+  background: var(--c-primary-weak);
+}
+.btn-solid {
+  background: #fff;
+  border: 1px solid var(--c-border);
+}
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--c-border);
+  background: #fff;
+  cursor: pointer;
+}
+.icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.icon-btn.trash {
+  border-color: #ffd7d7;
+  background: #fff7f7;
+}
+
+.myroutes {
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+.myroutes__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 18px 0 8px;
+}
+.myroutes__title {
+  margin: 0;
+}
+
+.empty-box {
+  border: 1px dashed var(--c-border, #d6e6ff);
+  border-radius: 12px;
+  background: var(--c-primary-weak, #e8f3ff);
+  padding: 16px;
+  text-align: center;
+}
+.empty-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.empty-sub {
+  color: var(--c-muted, #6b7c93);
+  font-size: 13px;
+}
+
+/* ====== Карточки моих маршрутов — «ровный» стиль ====== */
+.my-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.my-card {
+  background: #fff;
+  border: 1px solid var(--c-border);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 220px;
+}
+
+.my-cover {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.my-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  flex: 1 1 auto;
+}
+
+.my-title {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.my-list {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+}
+.my-list__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px dashed var(--c-border);
+  padding-bottom: 6px;
+}
+.my-list__row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.my-list__label {
+  color: var(--c-muted);
+}
+.my-list__value {
+  font-weight: 600;
+}
+
+.my-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+@media (max-width: 640px) {
+  .profile-head {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+  .head-actions {
+    width: 100%;
+  }
+  .head-actions .btn {
+    flex: 1;
+    justify-content: center;
+  }
+}

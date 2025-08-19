@@ -1,0 +1,66 @@
+.c-wrap {
+  margin-top: 16px;
+}
+.c-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.c-item {
+  display: flex;
+  gap: 8px;
+}
+.c-ava {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.c-body {
+  flex: 1;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #fff;
+}
+.c-head {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.c-name {
+  font-weight: 600;
+}
+.c-date {
+  font-size: 12px;
+  opacity: 0.7;
+}
+.c-text {
+  white-space: pre-wrap;
+}
+.c-note {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.c-form textarea {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+}
+.c-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+.btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}

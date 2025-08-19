@@ -1,0 +1,48 @@
+.signin-wrap {
+  max-width: 520px;
+  margin: 32px auto;
+}
+.signin-title {
+  margin: 0 0 16px;
+}
+.signin-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.signin-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.signin-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.signin-name {
+  font-weight: 600;
+}
+.signin-desc {
+  margin: 0 0 12px;
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.btn-primary {
+  background: #1e88e5;
+  color: #fff;
+  border-color: #1e88e5;
+}
+.btn-outline {
+  background: #fff;
+  color: #333;
+}

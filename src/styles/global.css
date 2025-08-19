@@ -1,0 +1,17 @@
+@import "./theme.css";
+@import "@yandex/ymaps3-default-ui-theme/dist/esm/index.css";
+
+:root {
+  --gap: 12px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}

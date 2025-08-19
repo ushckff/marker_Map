@@ -1,0 +1,103 @@
+.pim-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+}
+
+.pim-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 43, 70, 0.35);
+  border: 0;
+}
+
+.pim-card {
+  position: relative;
+  z-index: 61;
+  width: min(420px, calc(100vw - 32px));
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  animation: pim-fadeIn 0.25s ease;
+}
+
+@keyframes pim-fadeIn {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.pim-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eef2f8;
+  background: #f9fbff;
+}
+
+.pim-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0f2b46;
+}
+
+.pim-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  color: #4a5b73;
+  transition: background 0.2s;
+}
+.pim-close:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.pim-body {
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.pim-dl {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.pim-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pim-dt {
+  font-size: 0.85rem;
+  color: #6b7c93;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.pim-dd {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #0f2b46;
+}
+
+.pim-empty {
+  color: #6b7c93;
+  font-size: 0.95rem;
+  text-align: center;
+}

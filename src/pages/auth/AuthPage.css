@@ -1,0 +1,121 @@
+.auth {
+  min-height: calc(100dvh - 80px);
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, var(--c-bg) 0%, #ffffff 100%);
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 520px;
+  background: var(--c-card);
+  border: 1px solid var(--c-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  display: grid;
+  gap: 14px;
+}
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--c-primary-weak);
+  border: 1px solid var(--c-border);
+  border-radius: 12px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.auth-tab {
+  border: 0;
+  background: transparent;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--c-text);
+  cursor: pointer;
+}
+.auth-tab.is-active {
+  background: #fff;
+  border: 1px solid var(--c-border);
+}
+
+.auth-form {
+  display: grid;
+  gap: 10px;
+}
+
+.auth-label {
+  font-weight: 600;
+  color: var(--c-text);
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid var(--c-border);
+  border-radius: 10px;
+}
+
+.auth-error {
+  background: var(--c-danger-weak);
+  border: 1px solid #ffc4c4;
+  color: #7a0b0b;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid var(--c-border);
+  background: #fff;
+  color: var(--c-text);
+}
+
+.btn-primary {
+  border-color: var(--c-primary);
+  background: var(--c-primary-weak);
+}
+
+.btn-google {
+  border-color: #e5e7eb;
+  background: #fff;
+}
+
+.auth-sep {
+  height: 1px;
+  background: var(--c-border);
+  margin: 2px 0 4px;
+}
+
+.auth-footer,
+.auth-out {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  border: 0;
+  background: transparent;
+  color: var(--c-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .auth-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+  .auth-tab {
+    padding: 8px;
+  }
+}

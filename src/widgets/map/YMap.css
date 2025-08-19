@@ -1,0 +1,9 @@
+.ymap {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #eaf3ff;
+  border: 1px solid var(--c-border);
+  box-shadow: var(--shadow);
+  min-height: 220px;
+}
