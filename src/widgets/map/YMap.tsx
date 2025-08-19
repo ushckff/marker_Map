@@ -173,16 +173,25 @@ export default function YMap({
 
     (async () => {
       const ok = await waitForYMaps21(4000);
+      if (!ok) {
+        console.error("YMap: ymaps не успел загрузиться за 4000 мс");
+      }
       if (!ok || !hostRef.current) return;
 
       window.ymaps.ready(() => {
         if (disposed || !hostRef.current) return;
 
-        const map = new window.ymaps.Map(
-          hostRef.current,
-          { center: [55.751244, 37.618423], zoom, controls: [] },
-          { suppressMapOpenBlock: true }
-        );
+        let map: ymaps.Map;
+        try {
+          map = new window.ymaps.Map(
+            hostRef.current,
+            { center: [55.751244, 37.618423], zoom, controls: [] },
+            { suppressMapOpenBlock: true }
+          );
+        } catch (err) {
+          console.error("YMap: ошибка при создании карты", err);
+          return;
+        }
         map.controls.add("zoomControl");
         mapRef.current = map;
 

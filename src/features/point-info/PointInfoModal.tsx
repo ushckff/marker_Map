@@ -38,11 +38,14 @@ export default function PointInfoModal({ open, point, onClose }: Props) {
     (r) => typeof r.value === "string" && r.value.trim().length > 0
   );
 
+  const title =
+    (typeof point.title === "string" && point.title.trim()) || "Без названия";
+
   return (
     <div className="pim-overlay" role="dialog" aria-modal="true">
       <div className="pim-card">
         <div className="pim-head">
-          <div className="pim-title">Место</div>
+          <div className="pim-title">{title}</div>
           <button
             type="button"
             className="pim-close"
