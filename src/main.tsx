@@ -8,6 +8,12 @@ import "./styles/global.css";
 import "./app/root.css";
 import AuthWatcher from "./pages/auth/AuthWatcher";
 
+const redirectPath = sessionStorage.getItem("redirect");
+if (redirectPath) {
+  sessionStorage.removeItem("redirect");
+  router.navigate(redirectPath, { replace: true });
+}
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
