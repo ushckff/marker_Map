@@ -10,7 +10,6 @@ import FavoriteButton from "@/features/social/FavoriteButton";
 import { db } from "@/lib/firebase";
 import { doc, getDoc } from "firebase/firestore";
 
-/** простой дебаунс без any */
 function useDebounced(value: string, delay = 400) {
   const [v, setV] = useState(value);
   useEffect(() => {
@@ -20,12 +19,10 @@ function useDebounced(value: string, delay = 400) {
   return v;
 }
 
-/** Firestore Timestamp? */
 function isFsTimestamp(v: unknown): v is { toDate: () => Date } {
   return typeof v === "object" && v !== null && "toDate" in (v as object);
 }
 
-/** 1..3 → “дня”, иначе “дней” */
 function daysLabel(n: number): string {
   return n >= 1 && n <= 3 ? `${n} дня` : `${n} дней`;
 }

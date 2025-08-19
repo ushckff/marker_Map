@@ -17,6 +17,8 @@ import LikeButton from "@/features/social/LikeButton";
 import FavoriteButton from "@/features/social/FavoriteButton";
 import Comments from "@/features/comments/Comments";
 
+import { buildAppUrl } from "@/lib/url";
+
 import trashIcon from "@/assets/trash.png";
 
 import PointInfoModal, {
@@ -74,7 +76,7 @@ export default function RouteDetailsPage() {
   const isOwner = !!user && user.uid === route.ownerId;
 
   async function handleShare() {
-    const url = window.location.href;
+    const url = buildAppUrl(`route/${id}`);
     try {
       await navigator.clipboard.writeText(url);
       alert("Ссылка скопирована");

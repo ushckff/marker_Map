@@ -7,7 +7,6 @@ import {
   watchIsFavorite,
 } from "@/services/favorites";
 
-// твои иконки
 import notFavoriteImg from "@/assets/notFavorite.png";
 import favoriteImg from "@/assets/favorite.png";
 
@@ -39,12 +38,12 @@ export default function FavoriteButton({ routeId }: Props) {
     if (!user?.uid || busy) return;
     setBusy(true);
     const prev = fav;
-    setFav(!prev); // оптимистично
+    setFav(!prev);
     try {
       await toggleFavorite(user.uid, routeId);
     } catch (err) {
       console.error("[Favorite] toggle failed:", err);
-      setFav(prev); // откат
+      setFav(prev);
     } finally {
       setBusy(false);
     }

@@ -54,7 +54,6 @@ export default function LikeButton({ routeId }: Props) {
 
     setBusy(true);
 
-    // оптимистичное обновление
     const was = liked;
     setLiked(!was);
     setCount((c) => Math.max(0, c + (was ? -1 : 1)));
@@ -63,7 +62,6 @@ export default function LikeButton({ routeId }: Props) {
       await toggleRouteLike(routeId, user.uid);
     } catch (err) {
       console.error("[LikeButton] toggleRouteLike failed:", err);
-      // откат
       setLiked(was);
       setCount((c) => Math.max(0, c + (was ? 1 : -1)));
     } finally {

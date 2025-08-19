@@ -15,7 +15,6 @@ const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
-    /** Установить пользователя (или null) и снять флаг загрузки */
     setUser(state, action: PayloadAction<UserLite>) {
       state.current = action.payload;
       state.loading = false;

@@ -35,7 +35,6 @@ export async function toggleRouteLike(routeId: string, userId: string) {
   else await setDoc(ref, { createdAt: serverTimestamp() });
 }
 
-/* ====== COMMENT LIKES (новые) ====== */
 const commentLikesCol = (routeId: string, commentId: string) =>
   collection(db, "routes", routeId, "comments", commentId, "likes");
 

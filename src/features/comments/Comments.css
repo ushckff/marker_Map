@@ -2,7 +2,6 @@
   margin-top: 16px;
 }
 
-/* список */
 .c-list {
   list-style: none;
   padding: 0;
@@ -15,7 +14,7 @@
 .c-item {
   display: flex;
   gap: 8px;
-  align-items: flex-start; /* не центрируем по вертикали */
+  align-items: flex-start;
 }
 
 .c-ava {
@@ -24,7 +23,6 @@
   border-radius: 50%;
 }
 
-/* карточка комментария */
 .c-body {
   flex: 1;
   border: 1px solid #eee;
@@ -90,7 +88,6 @@
   cursor: pointer;
 }
 
-/* delete — красноватая */
 .c-body .icon-btn.trash {
   padding: 4px;
   border: 1px solid #ffcdd2;

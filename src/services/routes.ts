@@ -104,7 +104,6 @@ async function fetchFavoriteRouteIds(userId: string): Promise<Set<string>> {
   return ids;
 }
 
-/** Список публичных маршрутов (для главной) */
 export async function listPublicRoutes(
   params: ListParams = {}
 ): Promise<RouteWithId[]> {

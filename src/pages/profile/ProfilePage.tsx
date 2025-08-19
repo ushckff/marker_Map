@@ -13,6 +13,7 @@ import { listUserRoutes, deleteRoute } from "@/services/routes";
 import type { RouteWithId } from "@/entities/route/types";
 import trashIcon from "@/assets/trash.png";
 import type { Timestamp } from "firebase/firestore";
+import { buildAppUrl } from "@/lib/url";
 
 function toDateSafe(
   v: Timestamp | Date | number | string | null | undefined
@@ -123,7 +124,7 @@ export default function ProfilePage() {
   }
 
   async function handleShare(routeId: string) {
-    const url = `${location.origin}/route/${routeId}`;
+    const url = buildAppUrl(`route/${routeId}`);
     try {
       await navigator.clipboard.writeText(url);
       alert("Ссылка скопирована");
@@ -140,7 +141,6 @@ export default function ProfilePage() {
 
   return (
     <div className="profile-wrap">
-      {/* Шапка профиля */}
       <div className="profile-card">
         <div className="profile-head">
           <div className="avatar">
