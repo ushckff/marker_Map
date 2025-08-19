@@ -8,8 +8,8 @@ import {
   watchCommentLikesCount,
 } from "@/services/likes";
 
-import notLikedImg from "/assets/notLiked.png";
-import likedImg from "/assets/liked.png";
+import notLikedImg from "@/assets/notLiked.png";
+import likedImg from "@/assets/liked.png";
 
 type Props = { routeId: string; commentId: string };
 

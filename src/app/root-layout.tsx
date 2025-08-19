@@ -3,7 +3,7 @@ import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import type { RootState } from "@/store/store";
 import AuthWatcher from "@/pages/auth/AuthWatcher";
-import placeholder from "/assets/profile.png";
+import placeholder from "@/assets/profile.png";
 
 export default function RootLayout() {
   const user = useSelector((s: RootState) => s.user.current);

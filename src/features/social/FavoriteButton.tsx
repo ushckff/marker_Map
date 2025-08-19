@@ -8,8 +8,8 @@ import {
 } from "@/services/favorites";
 
 // твои иконки
-import notFavoriteImg from "/assets/notFavorite.png";
-import favoriteImg from "/assets/favorite.png";
+import notFavoriteImg from "@/assets/notFavorite.png";
+import favoriteImg from "@/assets/favorite.png";
 
 type Props = { routeId: string };
 

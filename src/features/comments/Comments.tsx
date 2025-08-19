@@ -5,7 +5,7 @@ import type { CommentWithId } from "@/entities/comment/types";
 import { useSelector } from "react-redux";
 import type { RootState } from "@/store/store";
 import CommentLikeButton from "./CommentLikeButton";
-import trashIcon from "/assets/trash.png";
+import trashIcon from "@/assets/trash.png";
 
 type Props = {
   routeId: string;

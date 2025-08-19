@@ -8,10 +8,10 @@ import { useEffect, useState, useCallback } from "react";
 import { signOutUser } from "@/services/auth";
 import { updateMyProfile } from "@/services/userProfile";
 import { useNavigate, Link } from "react-router-dom";
-import placeholder from "/assets/profile.png";
+import placeholder from "@/assets/profile.png";
 import { listUserRoutes, deleteRoute } from "@/services/routes";
 import type { RouteWithId } from "@/entities/route/types";
-import trashIcon from "/assets/trash.png";
+import trashIcon from "@/assets/trash.png";
 import type { Timestamp } from "firebase/firestore";
 
 function toDateSafe(

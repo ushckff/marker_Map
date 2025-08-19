@@ -1,4 +1,3 @@
-// src/features/route-editor/PointsEditor.tsx
 import { useEffect, useMemo, useState, useCallback } from "react";
 import {
   addPoint,
