@@ -1,4 +1,8 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  type RouteObject,
+} from "react-router-dom";
 import RootLayout from "@/app/root-layout";
 
 import HomePage from "@/pages/home/HomePage";
@@ -9,7 +13,7 @@ import AuthPage from "@/pages/auth/AuthPage";
 
 import ProtectedRoute from "@/components/ProtectedRoute";
 
-export const router = createBrowserRouter([
+const routes: RouteObject[] = [
   {
     path: "/",
     element: <RootLayout />,
@@ -38,4 +42,8 @@ export const router = createBrowserRouter([
       { path: "*", element: <Navigate to="/" replace /> },
     ],
   },
-]);
+];
+
+export const router = createBrowserRouter(routes, {
+  basename: import.meta.env.BASE_URL,
+});
