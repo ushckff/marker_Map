@@ -1,7 +1,7 @@
 import "./PointsList.css";
 import type { RoutePointWithId, PlaceTag } from "@/entities/point/types";
-import trashIcon from "@/assets/trash.png";
-import editIcon from "@/assets/edit.png";
+import trashIcon from "/assets/trash.png";
+import editIcon from "/assets/edit.png";
 
 type Props = {
   items: RoutePointWithId[];
