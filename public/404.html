@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <script>
-      var p = location.pathname + location.search + location.hash;
+      const p = location.pathname + location.search + location.hash;
 
-      var base = "/marker_Map/";
+      const repo = "/marker_Map";
 
-      if (!p.startsWith(base)) base = "";
+      const base = p.startsWith(repo + "/") ? repo : "";
 
       sessionStorage.redirect = p;
-      location.replace(base + "/");
+      location.replace(`${base}/`);
     </script>
   </head>
   <body></body>
